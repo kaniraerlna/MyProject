@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>kANIRA</title>
+        <script type="text/javascript">
+            function inputEmail()
+            { alert(document.getElementById(myForm=email).value);}
+            {alert(document.getElementById(myForm=password).value);}
+        </script>
+    </h:head>
+    <h:body>
+        <h2 align="center">
+            Hello~ Kanira Erliana Azwa Zalea</h2>
+        <hr/>
+        <h:form id="myForm">
+            <h:inputText a:placeholder="Email" id="email"/>&nbsp;
+            <h:inputSecret a:placeholder="Password" id="password"/><br/><br/>
+            <h:inputHidden value="Hallo 3SE2"/>
+            <h:selectOneMenu>
+                <h:outputText value ="Merk Mobil"/>&nbsp;
+                <f:selectItem itemLabel ="Honda"/>
+                <f:selectItem itemLabel ="Toyota"/>
+                <f:selectItem itemLabel ="Hyundai"/>
+                <f:selectItem itemLabel ="Kia"/>
+                <f:selectItem itemLabel ="Wuling"/>
+                <f:selectItem itemLabel ="DFSK"/>
+            </h:selectOneMenu><br/><br/>
+            <h:commandButton value ="Get value Email"/>&nbsp;
+            <h:commandButton value ="Get value Password"/>&nbsp;
+            <h:commandButton value ="Get value Hidden"/>&nbsp;
+            <h:commandButton value ="Get value Select"/>&nbsp;
+            <br/><br/>
+            
+            <h:selectOneRadio>
+                <h:outputText value ="Menu Makanan"/>&nbsp;
+                <f:selectItem itemLabel="Nasi Geprek"/>
+                <f:selectItem itemLabel="Nasi Kebuli"/>
+                <f:selectItem itemLabel="Nasi Sate"/>
+                <f:selectItem itemLabel="Nasi Kuning"/>
+                <f:selectItem itemLabel="Nasi Uduk"/>
+            </h:selectOneRadio><br/><br/>
+            
+            <h:outputText value ="Pilih salah satu atau lebih"/>
+            <h:selectManyCheckbox id ="smc" value ="Pilih minuman" title ="Penggunaan Select Many CheckBox"/>
+                <f:selectItem id="si2" itemLabel="Es Jeruk" itemValue="22"/>
+                <f:selectItem id="si3" itemLabel="Es Capucino" itemValue="33"/>
+                <f:selectItem id="si4" itemLabel="Jus Alpukat" itemValue="44"/>
+            <br/><br/>
+            
+            <h:commandButton value ="Get value Email"/>&nbsp;
+            <h:commandButton value ="Get value Password"/>&nbsp;
+            <h:commandButton value ="Get value Hidden"/>&nbsp;
+            <h:commandButton value ="Get value Select"/>&nbsp;
+        </h:form>
+    </h:body>       
+</html>
+
